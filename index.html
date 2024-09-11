@@ -1,0 +1,164 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="env.js"></script>
+	<script type="module" src="index.js"></script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    </head>
+        <style>
+            h1{
+                position:absolute;
+                border:2px solid black;
+                top:0px;
+                right:600px;
+            }
+            div#a{
+                position:absolute;
+                border:2px solid black;
+                top:60px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <img style = "height:40px; width:40px" src = "images/Logo.png">
+            PERSONAL TASK PLANNER
+            <img style = "height:40px; width:40px" src = "images/Logo.png">
+        </header>
+
+        <div id="a">
+            <p>Enter your tasks aldready scheduled and other tasks and we will give the schedule!</p>
+            <p id = "Motivation">Letss goo!!</p>
+        </div>
+
+        <section class = "row">
+            <section class= "column" id="input-container-1">
+                <div id = "sTask1" style="justify-content: space-between;">
+                    <textarea class= "sTime" id= "sTaskTime1" placeholder="Enter time"  style="position:absolute;left:20px;top:200px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    color:white;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color: #dec8f3;
+                    font-size: 16px;
+                    resize: none;"></textarea>
+                    
+                    <textarea class= "sIP" id= "sTaskIP1" placeholder="Enter task1" style="position:absolute;left:230px;top:200px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    color:white;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color: #dec8f3;
+                    font-size: 16px;
+                    resize: none;"></textarea>
+                </div>
+
+                <div id = "sTask2">
+                    <textarea class= "sTime" id= "sTaskTime2" placeholder="Enter time" style="position:absolute;left:20px;top:250px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    color:white;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color:#dec8f3;
+                    font-size: 16px;
+                    resize: none;" ></textarea>
+                    <textarea class= "sIP" id= "sTaskIP2" placeholder="Enter task2" style="position:absolute;left:230px;top:250px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    color:white;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color: #dec8f3;
+                    font-size: 16px;
+                    resize: none;" ></textarea>
+                </div>
+
+                <div id = "sTask3">
+                    <textarea class= "sTime" id= "sTaskTime3" placeholder="Enter time"  style="position:absolute;left:20px;top:300px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    color: white;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color: #dec8f3;
+                    font-size: 16px;
+                    resize: none;"></textarea>
+                    <textarea class= "sIP" id= "sTaskIP3" placeholder="Enter task3" style="position:absolute;left:230px;top:300px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    color: white;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color: #dec8f3;
+                    font-size: 16px;
+                    resize: none;" ></textarea>
+                </div>
+
+                <div id = "sTask4">
+                    <textarea class= "sTime" id= "sTaskTime4" placeholder="Enter time"  style="position:absolute;left:20px;top:350px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+            color:white;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color: #dec8f3;
+                    font-size: 16px;
+                    resize: none;"></textarea>
+                    <textarea class= "sIP" id= "sTaskIP4" placeholder="Enter task4" style="position:absolute;left:230px;top:350px;height:50px;width:200px; padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #3c83e8;
+                    border-radius: 4px;
+                    color: white;
+                    box-shadow: 5px 5px 10px rgba(159, 212, 245, 0.5);
+                    background-color: #dec8f3;
+                    font-size: 16px;
+                    resize: none;"></textarea>
+                </div>
+            </section>
+
+
+            <section class= "column" id="input-container-2">
+            <textarea id="wishlist" placeholder="Add your Todo tasks that you wish to be scheduled. If none, you can click the generate button."  style="position:absolute;left:30px;top:500px;width:380px;height:300px;
+            height: 300px;
+            color: white;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 5px solid  pink;
+                border-radius: 4px;
+                box-shadow: 5px 5px 10px rgba(255, 192, 203, 0.5);
+                background-color: #f8f8f8;
+                background-image: url(images/WishlistI.png);
+                font-size: 16px;
+                resize: none;" ></textarea>
+            </section>  
+
+
+            <section class= "column" id="setup-container">
+                <div class="setup-inner">
+                    <img src="images/lofiboygif.6.gif"> 
+                    <div class="speech-bubble-ai" id="speech-bubble-ai">
+                        <p id="PA-text">
+                            Hi! Welcome to your personal SynthWave Assistant! I am so proud of you for taking a step into a much more productive life! I am here to help you with your daily schedule. Enter your tasks that have already been scheduled in the left and the tasks that you wish to be scheduled towards your right...
+                        </p>
+                    </div>
+                </div>
+                <div class="setup-inner setup-input-container" id="setup-input-container">
+                    <button class="send-btn" id="send-btn" aria-label="send" type="button">CREATE SCHEDULE</button>
+                </div>
+            </section>
+        </section>  
+        <section class="output-container" id="output-container">
+            <div class="speech-bubble-ai" id="speech-bubble-output" style = " left: 10px; top: 10px; height: 530px; width: 450px; padding: 15px;">
+                
+            </div>
+        </section>
+    </body>
